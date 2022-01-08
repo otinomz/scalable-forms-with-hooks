@@ -11,10 +11,10 @@ export const App = () => {
     e.preventDefault();
   };
 
-  console.log("_____FORM_DATA_____", {
-    email,
-    password
-  });
+  // console.log("_____FORM_DATA_____", {
+  //   email,
+  //   password
+  // });
 
   console.log(" I AM RENDERING");
 
