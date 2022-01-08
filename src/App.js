@@ -3,9 +3,6 @@ import "./styles.css";
 import { useForm } from "react-hook-form";
 
 export const App = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
   const onSubmit = (e) => {
     e.preventDefault();
   };
@@ -30,7 +27,7 @@ export const App = () => {
             id="email"
             type="email"
             name="email"
-            onChange={(e) => setEmail(e.target.ariaValueText)}
+            // onChange={(e) => setEmail(e.target.ariaValueText)}
           />
           <div className="invalid-feedback"></div>
         </div>
@@ -41,7 +38,7 @@ export const App = () => {
             id="password"
             type="password"
             name="password"
-            onChange={(e) => setPassword(e.target.ariaValueText)}
+            // onChange={(e) => setPassword(e.target.ariaValueText)}
           />
           <div className="invalid-feedback"></div>
         </div>
