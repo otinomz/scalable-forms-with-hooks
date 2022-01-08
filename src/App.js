@@ -21,6 +21,32 @@ const App = () => {
   return (
     <div className="App">
       <h1>React forms</h1>
+
+      {/* building the forms */}
+      <form onSubmit={onSubmit}>
+        <div className="form-group">
+          <label htmlFor="email"> Email address</label>
+          <input
+            className="form-control"
+            id="email"
+            type="email"
+            name="email"
+            ref={register}
+          />
+          <div className="invalid-feedback"></div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="password"> Email address</label>
+          <input
+            className="form-control"
+            id="password"
+            type="password"
+            name="password"
+            ref={register}
+          />
+          <div className="invalid-feedback"></div>
+        </div>
+      </form>
     </div>
   );
 };
