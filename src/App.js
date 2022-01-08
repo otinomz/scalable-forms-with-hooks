@@ -19,6 +19,20 @@ export default function App() {
   return (
     <div className="App">
       <h1>React forms</h1>
+
+      {/* building the forms */}
+      <form onSubmit={onSubmit}>
+        <div className="form-group">
+          <label htmlFor="email"> Email address</label>
+          <input
+            className="form-control"
+            id="email"
+            type="email"
+            name="email"
+            onChange={(e) => setEmail(e.target.ariaValueText)}
+          />
+        </div>
+      </form>
     </div>
   );
 }
