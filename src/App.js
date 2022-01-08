@@ -1,70 +1,24 @@
-// import { useState } from "react";
-import "./styles.css";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
+import "./styles.css";
+// import Header from "./Header";
 
-const App = () => {
-  // we use register function, to tell hooks
-  // which input we have in our forms
+export default function App() {
   const { register, handleSubmit } = useForm();
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-  };
-
-  // console.log("_____FORM_DATA_____", {
-  //   email,
-  //   password
-  // });
-
-  console.log(" I AM RENDERING");
+  const [result, setResult] = useState("");
 
   return (
-    <div className="App">
-      <h1>React forms</h1>
-
-      {/* building the forms */}
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-group">
-          <label htmlFor="email"> Email address</label>
-          <input
-            className="form-control"
-            id="email"
-            type="email"
-            name="email"
-            {...register}
-          />
-          <div className="invalid-feedback"></div>
-        </div>
-        <div className="form-group">
-          <label htmlFor="password"> Email address</label>
-          <input
-            className="form-control"
-            id="password"
-            type="password"
-            name="password"
-            // ref={register}
-          />
-          <div className="invalid-feedback"></div>
-        </div>
-        <div className="form-group form-check">
-          <input
-            className="form-check-input"
-            id="rememberMe"
-            type="checkbox"
-            name="password"
-            ref={register}
-          />
-          <label className="form-check-label" htmlFor="rememberMe">
-            {" "}
-            Remember Me
-          </label>
-          <div className="invalid-feedback"></div>
-        </div>
-
-        <button>Login to my account</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit((data) => setResult(JSON.stringify(data)))}>
+      {/* <Header /> */}
+      <input {...register("firstName")} placeholder="First name" />
+      <input {...register("lastName")} placeholder="Last name" />
+      <select {...register("category")}>
+        <option value="">Select...</option>
+        <option value="A">Category A</option>
+        <option value="B">Category B</option>
+      </select>
+      <p>{result}</p>
+      <input type="submit" />
+    </form>
   );
-};
-
-export default App;
+}
