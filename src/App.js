@@ -54,8 +54,14 @@ const App = () => {
             name="password"
             // ref={register}
           />
+          <label className="form-check-label" htmlFor="rememberMe">
+            {" "}
+            Remember Me
+          </label>
           <div className="invalid-feedback"></div>
         </div>
+
+        <button>Login to my account</button>
       </form>
     </div>
   );
