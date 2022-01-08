@@ -32,7 +32,6 @@ export const App = () => {
             type="email"
             name="email"
             ref={register}
-            // onChange={(e) => setEmail(e.target.ariaValueText)}
           />
           <div className="invalid-feedback"></div>
         </div>
@@ -44,7 +43,6 @@ export const App = () => {
             type="password"
             name="password"
             ref={register}
-            // onChange={(e) => setPassword(e.target.ariaValueText)}
           />
           <div className="invalid-feedback"></div>
         </div>
