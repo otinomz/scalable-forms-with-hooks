@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./styles.css";
-// import {useForm} from 'react-hook-form'
-export default function App() {
+import { useForm } from "react-hook-form";
+
+export const App = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -47,4 +48,4 @@ export default function App() {
       </form>
     </div>
   );
-}
+};
