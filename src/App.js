@@ -49,7 +49,7 @@ const App = () => {
         <div className="form-group form-check">
           <input
             className="form-check-input"
-            id="password"
+            id="rememberMe"
             type="checkbox"
             name="password"
             // ref={register}
