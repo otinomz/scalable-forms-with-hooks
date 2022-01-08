@@ -40,7 +40,7 @@ export default function App() {
             id="password"
             type="password"
             name="password"
-            onChange={(e) => setEmail(e.target.ariaValueText)}
+            onChange={(e) => setPassword(e.target.ariaValueText)}
           />
           <div className="invalid-feedback"></div>
         </div>
