@@ -7,9 +7,9 @@ const App = () => {
   // which input we have in our forms
   const { register, handleSubmit } = useForm();
 
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  // };
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
 
   // console.log("_____FORM_DATA_____", {
   //   email,
@@ -23,7 +23,7 @@ const App = () => {
       <h1>React forms</h1>
 
       {/* building the forms */}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
           <label htmlFor="email"> Email address</label>
           <input
