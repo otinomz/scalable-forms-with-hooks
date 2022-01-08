@@ -31,6 +31,18 @@ export default function App() {
             name="email"
             onChange={(e) => setEmail(e.target.ariaValueText)}
           />
+          <div className="invalid-feedback"></div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="email"> Email address</label>
+          <input
+            className="form-control"
+            id="password"
+            type="password"
+            name="password"
+            onChange={(e) => setEmail(e.target.ariaValueText)}
+          />
+          <div className="invalid-feedback"></div>
         </div>
       </form>
     </div>
