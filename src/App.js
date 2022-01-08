@@ -31,7 +31,7 @@ const App = () => {
             id="email"
             type="email"
             name="email"
-            ref={register}
+            // ref={register}
           />
           <div className="invalid-feedback"></div>
         </div>
@@ -42,7 +42,17 @@ const App = () => {
             id="password"
             type="password"
             name="password"
-            ref={register}
+            // ref={register}
+          />
+          <div className="invalid-feedback"></div>
+        </div>
+        <div className="form-group form-check">
+          <input
+            className="form-check-input"
+            id="password"
+            type="checkbox"
+            name="password"
+            // ref={register}
           />
           <div className="invalid-feedback"></div>
         </div>
