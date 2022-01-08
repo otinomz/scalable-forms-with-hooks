@@ -31,7 +31,7 @@ const App = () => {
             id="email"
             type="email"
             name="email"
-            // ref={register}
+            {...register}
           />
           <div className="invalid-feedback"></div>
         </div>
@@ -42,7 +42,7 @@ const App = () => {
             id="password"
             type="password"
             name="password"
-            ref={register}
+            // ref={register}
           />
           <div className="invalid-feedback"></div>
         </div>
