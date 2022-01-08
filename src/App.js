@@ -9,6 +9,13 @@ export default function App() {
     e.preventDefault();
   };
 
+  console.log("_____FORM_DATA_____", {
+    email,
+    password
+  });
+
+  // console.log(" I AM RENDERING")
+
   return (
     <div className="App">
       <h1>React forms</h1>
