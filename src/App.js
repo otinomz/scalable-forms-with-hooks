@@ -3,6 +3,10 @@ import "./styles.css";
 import { useForm } from "react-hook-form";
 
 export const App = () => {
+  // we use register function, to tell hooks
+  // which input we have in our forms
+  const { register } = useForm();
+
   const onSubmit = (e) => {
     e.preventDefault();
   };
