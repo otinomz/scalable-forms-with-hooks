@@ -16,7 +16,7 @@ export const App = () => {
     password
   });
 
-  // console.log(" I AM RENDERING")
+  console.log(" I AM RENDERING");
 
   return (
     <div className="App">
@@ -36,7 +36,7 @@ export const App = () => {
           <div className="invalid-feedback"></div>
         </div>
         <div className="form-group">
-          <label htmlFor="email"> Email address</label>
+          <label htmlFor="password"> Email address</label>
           <input
             className="form-control"
             id="password"
